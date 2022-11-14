@@ -11,13 +11,32 @@ public class PinNumber : MonoBehaviour {
 
     private TMP_Text _text;
 
+    [SerializeField] private Vector3 offset;
+    private Animator _animator;
+    private bool animPlayedAtLeastOneTime = false;
+
     private void Start() {
         _text = GetComponentInChildren<TMP_Text>();
         _text.text = number;
+        _animator = GetComponent<Animator>();
+        offset.x = transform.position.x;
+        offset.y = transform.position.y;
+    }
+
+    private void LateUpdate() {
+        if (animPlayedAtLeastOneTime) {
+            transform.position = new Vector3(offset.x, offset.y, transform.position.z);
+        }
     }
 
     public void AddNumberToPin() {
+        PlayAnimation();
         _pinCodeManager.AddToPinCode(number);
         UIManager.StatusMessage = "Number " + number + " added to pin code";
+    }
+
+    private void PlayAnimation() {
+        animPlayedAtLeastOneTime = true;
+        _animator.Play("PinNumber");
     }
 }

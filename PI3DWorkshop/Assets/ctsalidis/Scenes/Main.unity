@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 110689588}
   - component: {fileID: 110689587}
   - component: {fileID: 110689586}
+  - component: {fileID: 110689590}
   m_Layer: 7
   m_Name: PinNumber (2)
   m_TagString: Untagged
@@ -308,6 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 2
   _pinCodeManager: {fileID: 2064068663}
+  offset: {x: 0.5, y: 0, z: 0}
 --- !u!65 &110689587
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -371,6 +373,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110689584}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &110689590
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110689584}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a058c51b2d2e4a41a48cf5f88ce5157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &127006308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +1962,7 @@ GameObject:
   - component: {fileID: 774417667}
   - component: {fileID: 774417666}
   - component: {fileID: 774417665}
+  - component: {fileID: 774417669}
   m_Layer: 7
   m_Name: PinNumber (5)
   m_TagString: Untagged
@@ -1977,6 +2000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 5
   _pinCodeManager: {fileID: 2064068663}
+  offset: {x: 0.5, y: -0.25, z: 0}
 --- !u!65 &774417666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2040,6 +2064,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774417663}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &774417669
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774417663}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a058c51b2d2e4a41a48cf5f88ce5157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &918937358
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,6 +2097,7 @@ GameObject:
   - component: {fileID: 918937360}
   - component: {fileID: 918937359}
   - component: {fileID: 918937363}
+  - component: {fileID: 918937364}
   m_Layer: 7
   m_Name: PinNumber
   m_TagString: Untagged
@@ -2153,6 +2198,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 0
   _pinCodeManager: {fileID: 2064068663}
+  offset: {x: 0, y: 0, z: 0}
+--- !u!95 &918937364
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918937358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a058c51b2d2e4a41a48cf5f88ce5157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2425,7 @@ GameObject:
   - component: {fileID: 1101772255}
   - component: {fileID: 1101772254}
   - component: {fileID: 1101772253}
+  - component: {fileID: 1101772257}
   m_Layer: 7
   m_Name: PinNumber (4)
   m_TagString: Untagged
@@ -2396,6 +2463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 4
   _pinCodeManager: {fileID: 2064068663}
+  offset: {x: 0.25, y: -0.25, z: 0}
 --- !u!65 &1101772254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2459,6 +2527,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101772251}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1101772257
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101772251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a058c51b2d2e4a41a48cf5f88ce5157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1167112154
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2792,7 @@ GameObject:
   - component: {fileID: 1281502878}
   - component: {fileID: 1281502877}
   - component: {fileID: 1281502876}
+  - component: {fileID: 1281502880}
   m_Layer: 7
   m_Name: PinNumber (3)
   m_TagString: Untagged
@@ -2741,6 +2830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 3
   _pinCodeManager: {fileID: 2064068663}
+  offset: {x: 0, y: -0.25, z: 0}
 --- !u!65 &1281502877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2804,6 +2894,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281502874}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1281502880
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281502874}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a058c51b2d2e4a41a48cf5f88ce5157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1336845394
 GameObject:
   m_ObjectHideFlags: 0
@@ -3531,6 +3641,7 @@ GameObject:
   - component: {fileID: 1500887439}
   - component: {fileID: 1500887438}
   - component: {fileID: 1500887437}
+  - component: {fileID: 1500887441}
   m_Layer: 7
   m_Name: PinNumber (1)
   m_TagString: Untagged
@@ -3568,6 +3679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number: 1
   _pinCodeManager: {fileID: 2064068663}
+  offset: {x: 0.25, y: 0, z: 0}
 --- !u!65 &1500887438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3631,6 +3743,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500887435}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &1500887441
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500887435}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a058c51b2d2e4a41a48cf5f88ce5157, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1534620160
 GameObject:
   m_ObjectHideFlags: 0
